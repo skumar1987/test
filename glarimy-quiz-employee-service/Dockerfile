@@ -3,4 +3,4 @@ COPY src /usr/shob/src
 COPY pom.xml /usr/shob
 RUN mvn -f /usr/shob/pom.xml clean package
 EXPOSE 8080
-ENTRYPOINT ["java","-Dspring.data.mongodb.uri=mongodb://mongo:27017/glarimy","-jar","/usr/shob/target/glarimy-quiz-employee-service.jar"]
+ENTRYPOINT ["java","-Dspring.data.mongodb.uri=mongodb://mongo:27017/glarimy","-jar","/usr/shob/target/glarimy-quiz-employee-service_0.0.1-SNAPSHOT.jar"]
